@@ -1,0 +1,145 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+    margin: 0;
+    padding: 30px 15px;
+    color: #333;
+}
+
+/* Main form container */
+main {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Text inputs, email, password, date, number, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #fafafa;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.3);
+    background-color: white;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9fafb;
+}
+
+/* Legends */
+legend {
+    font-weight: bold;
+    color: #4f46e5;
+    padding: 0 8px;
+}
+
+/* Checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #4f46e5;
+}
+
+/* Labels inside fieldsets */
+fieldset label {
+    font-weight: normal;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 5px 0 0;
+    transition: 0.3s;
+}
+
+/* Create Account button */
+button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #3730a3;
+}
+
+/* Clear Form button */
+button[type="reset"] {
+    background-color: #e5e7eb;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #d1d5db;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
