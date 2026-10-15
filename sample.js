@@ -46,3 +46,13 @@ const student = {
 console.log(student.name)
 console.log(student["age"])
 console.log(student.address.City) 
+
+const student1 = {
+    name: "Priya",
+    age: 21,
+    course: "React"
+}
+const {name, age, course} = student1
+console.log(name)
+console.log(age)
+console.log(course)
