@@ -34,3 +34,15 @@ console.log(employee.salary)
 employee.city = "Chennai"
 delete employee.city
 console.log(employee)
+
+const student = {
+    name: "Priya",
+    age: 20,
+    address: {
+        City: "Chennai",
+        State: "Tamil Nadu"
+    }
+}
+console.log(student.name)
+console.log(student["age"])
+console.log(student.address.City) 
