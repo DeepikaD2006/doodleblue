@@ -56,3 +56,91 @@ const {name, age, course} = student1
 console.log(name)
 console.log(age)
 console.log(course)
+
+const {
+  name: studentName,
+  city="Chennai"
+}=student1;
+console.log(studentName);
+console.log(city);
+
+const orginal={
+    name:"Neiran",
+    age:20,
+}
+const updated={
+    ...orginal,
+    age:21,
+    city:"Chennai"
+}
+console.log(orginal)
+console.log(updated)
+
+//spread - combine operators
+const personal={
+  name:"John",
+  age:30,
+}
+const professional={
+  company:"ABC Corp",
+  job:"Developer"
+}
+const combined={
+  ...personal,
+  ...professional
+}
+console.log(combined)
+
+//in array
+const first=[1,2,3]
+const second=[4,5,6]
+
+const combinedArray=[...first,...second]
+console.log(combinedArray)
+
+const copy =[...first]
+console.log(copy)
+
+//optional chaining
+const user={
+  name:"John",
+  address:{
+    city:"New York",
+    state:"NY"
+  }
+}
+
+const username=null;
+const ageValue =0;
+const city1 = undefined;
+
+console.log(username??"Guest");
+console.log(ageValue??18);
+console.log(city1??"Chennai");
+console.log(user.address?.city);
+
+console.log(0 || 100);
+console.log(0 ?? 100);
+
+console.log(false || true);
+console.log(false ?? true);
+console.log("" ?? "Guest");
+console.log("" ||"Guest");
+
+/*|| vs ??*/
+
+console.log(0||100);
+console.log(0??100);
+
+console.log(false||true)
+console.log(false??true)
+
+console.log(""??"Guest")
+console.log(""||"Guest")
+
+const a1=null
+const b1=undefined
+console.log(a1??18)
+console.log(b1??18)
+
+
